@@ -6,8 +6,8 @@ function calculateTotal(items, discountCode) {
     discount = subtotal * 0.10;
   } else if (discountCode === 'BULK20' && items.length >= 5) {
     discount = subtotal * 0.20;
-  } else if (discountCode === 'HOLIDAY15') {
-    discount = subtotal * 0.15;
+  } else if (discountCode === 'HOLIDAY25') {
+    discount = subtotal * 0.25;
   }
 
   return subtotal - discount;
